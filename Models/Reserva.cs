@@ -26,8 +26,8 @@ namespace DesafioProjetoHospedagem.Models
             {
         // TODO: Retornar uma exception caso a capacidade seja menor que o número de hóspedes recebido
         // *IMPLEMENTE AQUI*
-
-          }
+              throw new Exception($"Você está tentando colocar mais hóspedes do que a capacidade máxima da suíte, que é de {Suite.Capacidade} hóspedes");
+            }
         }
 
         public void CadastrarSuite(Suite suite)
